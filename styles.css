@@ -1,0 +1,11 @@
+body {
+    background-color: #cdb4db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+}
