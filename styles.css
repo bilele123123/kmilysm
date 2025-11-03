@@ -1,11 +1,160 @@
+@font-face {
+    font-family: 'Cute';
+    src: url('assets/font/CuteHandWriting.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stroberri';
+    src: url('assets/font/Stroberi.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HappyNight';
+    src: url('assets/font/Happy_Night.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
-    background-color: #cdb4db;
+    font-family: 'Cute', sans-serif;
+    background-color: #9075a0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('assets/stars.gif');
 }
 
 .main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    height: 80%;
+    max-width: 600px;
+    min-height: 80px;
+    background-color: #ffd4e4;
+    border-radius: 30px;
+}
+
+.banner-text {
+    font-size: clamp(24px, 6vw, 40px); /* responsive font scaling */
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Start Audio */
+.audio-advise {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.audio {
+    margin: 24px 0;
+}
+/* End Audio */
+
+.start-text {
+    padding: 4px;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+#dancing-hamster, #dancing-dog {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+/* Start Hubble */
+.hubble {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    background-color: rgb(232, 214, 241);
+    border-color: #75667e;
+    padding: 12px;
+}
+
+.hubble-title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#hubble-image {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.hubble-text {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+/* End Hubble */
+
+.end-text-body {
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+.end-text-closing {
+    margin-top: 12px;
+
+    p {
+        margin: 0;
+    }
+}
+
+/* 📱 Mobile-first adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        padding: 15px;
+    }
+
+    .banner-text {
+        font-size: clamp(20px, 8vw, 36px);
+    }
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+    .main {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .banner {
+        border-radius: 20px;
+    }
+
+    .banner-text {
+        font-size: clamp(18px, 9vw, 30px);
+    }
 }
