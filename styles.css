@@ -51,10 +51,12 @@ body {
     min-height: 80px;
     background-color: #ffd4e4;
     border-radius: 30px;
+    background-image: url(assets/glitter.gif);
 }
 
 .banner-text {
-    font-size: clamp(24px, 6vw, 40px); /* responsive font scaling */
+    font-size: clamp(24px, 6vw, 40px);
+    /* responsive font scaling */
     text-align: center;
     line-height: 1.2;
     margin: 0;
@@ -71,15 +73,22 @@ body {
 .audio {
     margin: 24px 0;
 }
+
 /* End Audio */
 
 .start-text {
     padding: 4px;
     margin: 10px 0;
-    font-size: 30px;
+    font-size: 34px;
+    background-color: rgb(232, 214, 241);
+    border-radius: 12px;
+    padding: 14px;
+    background-image: url(assets/sparkles-sparkle.gif);
+    font-weight: bold;
 }
 
-#dancing-hamster, #dancing-dog {
+#dancing-hamster,
+#dancing-dog {
     max-width: 300px;
     border-radius: 12px;
 }
